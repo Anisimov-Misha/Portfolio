@@ -1,0 +1,279 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/ 
+body {
+  font-family: Poppins;
+  background-color: #171718;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #171718;
+  border-bottom: 1px solid #26292D;
+  padding: 0 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.header .header__container .header__logo {
+  color: white;
+  font-size: 24px;
+}
+@media (max-width: 1200px) {
+  .header .header__container .header__logo {
+    font-size: calc(16px + 8 * (100vw - 320px) / 880);
+  }
+}
+.header .header__container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+}
+.header .header__container .header__nav .nav__link {
+  font-size: 16px;
+  color: white;
+  -webkit-transition: border-bottom 0.3s ease-out;
+  transition: border-bottom 0.3s ease-out;
+  padding: 2px 0;
+}
+@media (max-width: 1200px) {
+  .header .header__container .header__nav .nav__link {
+    font-size: calc(12px + 4 * (100vw - 320px) / 880);
+  }
+}
+.header .header__container .header__nav .nav__link:hover {
+  border-bottom: 1px solid #5C62EC;
+  margin: 0 0 -3px 0;
+}
+
+.main .main__container {
+  margin-top: 30px;
+  position: relative;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .main__container img {
+  margin-top: 40px;
+  position: absolute;
+  left: width/2;
+  top: width/2;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .main .main__container img {
+    width: calc(280px + 348 * (100vw - 320px) / 880);
+  }
+}
+.main .main__container .main__title {
+  color: #FAFAFA;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+@media (max-width: 1200px) {
+  .main .main__container .main__title {
+    font-size: calc(20px + 40 * (100vw - 320px) / 880);
+  }
+}
+.main .main__container .main__subtitle {
+  color: #FAFAFA;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+@media (max-width: 1200px) {
+  .main .main__container .main__subtitle {
+    font-size: calc(16px + 24 * (100vw - 320px) / 880);
+  }
+}
+.main .main__container .main__quote {
+  color: #FAFAFA;
+}
+
+.projects {
+  padding: 70px 0;
+  background-color: #E5E5E5;
+}
+.projects .projects__container .projects__title {
+  text-align: center;
+  color: #5C62EC;
+  font-size: 60px;
+}
+@media (max-width: 1200px) {
+  .projects .projects__container .projects__title {
+    font-size: calc(20px + 40 * (100vw - 320px) / 880);
+  }
+}
+.projects .projects__container .projects__body {
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.projects .projects__container .projects__body .project {
+  background-color: #FAFAFA;
+  width: 370px;
+  min-height: 340px;
+  border-radius: 12px;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.434) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.434) 0px 8px 24px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+.projects .projects__container .projects__body .project:hover {
+  -webkit-transform: scale(105%, 105%);
+          transform: scale(105%, 105%);
+}
+.projects .projects__container .projects__body .project .project__img {
+  height: 260px;
+  border-bottom: 3px solid rgb(167, 167, 167);
+}
+.projects .projects__container .projects__body .project .project__img img {
+  width: 100%;
+  height: 100%;
+}
+.projects .projects__container .projects__body .project .project__title {
+  color: #171718;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 25px;
+}
+
+.footer .footer__container {
+  max-width: 600px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer__container .footer__media-item {
+  color: white;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.footer .footer__container .footer__media-item:hover:not(:last-child) {
+  -webkit-transform: scale(120%, 120%);
+          transform: scale(120%, 120%);
+}
+.footer .footer__container .footer__media-item img {
+  width: 40px;
+}/*# sourceMappingURL=style.css.map */
