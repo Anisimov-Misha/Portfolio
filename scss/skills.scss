@@ -68,10 +68,9 @@ body{
 }
 // Main
 .main{
-    margin: 65px 0 0 0;
-    padding: 50px 0;
-    background-color: white;
-    .main__container{
+   background-color: white;
+   padding: 100px 0;
+   .main__container{
         .main__title{
             text-align: center;
             font-size: 60px;
@@ -80,8 +79,8 @@ body{
         }
         .main__body{
          display: grid;
-         grid-template-columns: 1fr 1fr 1fr;
-         gap: 30px;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         gap: 50px;
          text-align: center;
          .main__element{
             & img{

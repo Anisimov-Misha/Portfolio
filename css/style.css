@@ -187,7 +187,7 @@ body {
 .main .main__container .main__title {
   color: #FAFAFA;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 60px;
 }
 @media (max-width: 1200px) {
@@ -245,11 +245,6 @@ body {
   color: #5C62EC;
   font-size: 60px;
 }
-@media (max-width: 1200px) {
-  .projects .projects__container .projects__title {
-    font-size: calc(20px + 40 * (100vw - 320px) / 880);
-  }
-}
 .projects .projects__container .projects__body {
   margin-top: 60px;
   display: grid;
@@ -288,6 +283,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding: 25px;
+  line-height: 35px;
 }
 
 .footer .footer__container {

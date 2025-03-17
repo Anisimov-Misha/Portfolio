@@ -159,9 +159,8 @@ body {
 }
 
 .main {
-  margin: 65px 0 0 0;
-  padding: 50px 0;
   background-color: white;
+  padding: 100px 0;
 }
 .main .main__container .main__title {
   text-align: center;
@@ -171,8 +170,8 @@ body {
 }
 .main .main__container .main__body {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
   text-align: center;
 }
 .main .main__container .main__body .main__element img {
